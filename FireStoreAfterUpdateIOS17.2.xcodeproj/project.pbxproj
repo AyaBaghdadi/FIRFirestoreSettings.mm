@@ -13,6 +13,7 @@
 		BAAD6AE72B8B6C14001E5A29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAAD6AE52B8B6C14001E5A29 /* Main.storyboard */; };
 		BAAD6AE92B8B6C15001E5A29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAAD6AE82B8B6C15001E5A29 /* Assets.xcassets */; };
 		BAAD6AEC2B8B6C15001E5A29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAAD6AEA2B8B6C15001E5A29 /* LaunchScreen.storyboard */; };
+		BAAD6AF52B8B6C22001E5A29 /* FIRFirestoreSettings.mm in Sources */ = {isa = PBXBuildFile; fileRef = BAAD6AF42B8B6C22001E5A29 /* FIRFirestoreSettings.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		BAAD6AE82B8B6C15001E5A29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAAD6AEB2B8B6C15001E5A29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAAD6AED2B8B6C15001E5A29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAAD6AF32B8B6C22001E5A29 /* FireStoreAfterUpdateIOS17.2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FireStoreAfterUpdateIOS17.2-Bridging-Header.h"; sourceTree = "<group>"; };
+		BAAD6AF42B8B6C22001E5A29 /* FIRFirestoreSettings.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FIRFirestoreSettings.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 		BAAD6ADE2B8B6C14001E5A29 /* FireStoreAfterUpdateIOS17.2 */ = {
 			isa = PBXGroup;
 			children = (
+				BAAD6AF42B8B6C22001E5A29 /* FIRFirestoreSettings.mm */,
 				BAAD6ADF2B8B6C14001E5A29 /* AppDelegate.swift */,
 				BAAD6AE12B8B6C14001E5A29 /* SceneDelegate.swift */,
 				BAAD6AE32B8B6C14001E5A29 /* ViewController.swift */,
@@ -63,6 +67,7 @@
 				BAAD6AE82B8B6C15001E5A29 /* Assets.xcassets */,
 				BAAD6AEA2B8B6C15001E5A29 /* LaunchScreen.storyboard */,
 				BAAD6AED2B8B6C15001E5A29 /* Info.plist */,
+				BAAD6AF32B8B6C22001E5A29 /* FireStoreAfterUpdateIOS17.2-Bridging-Header.h */,
 			);
 			path = FireStoreAfterUpdateIOS17.2;
 			sourceTree = "<group>";
@@ -99,6 +104,7 @@
 				TargetAttributes = {
 					BAAD6ADB2B8B6C14001E5A29 = {
 						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
 					};
 				};
 			};
@@ -138,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAAD6AF52B8B6C22001E5A29 /* FIRFirestoreSettings.mm in Sources */,
 				BAAD6AE42B8B6C14001E5A29 /* ViewController.swift in Sources */,
 				BAAD6AE02B8B6C14001E5A29 /* AppDelegate.swift in Sources */,
 				BAAD6AE22B8B6C14001E5A29 /* SceneDelegate.swift in Sources */,
@@ -290,6 +297,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -307,6 +315,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "AyaBaghdadi.FireStoreAfterUpdateIOS17-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "FireStoreAfterUpdateIOS17.2/FireStoreAfterUpdateIOS17.2-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -317,6 +327,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -334,6 +345,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "AyaBaghdadi.FireStoreAfterUpdateIOS17-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "FireStoreAfterUpdateIOS17.2/FireStoreAfterUpdateIOS17.2-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
